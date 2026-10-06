@@ -260,46 +260,6 @@ section{position:relative;overflow:hidden}
 .car-dot{width:7px;height:7px;background:rgba(196,154,108,.3);border-radius:50%;cursor:pointer;transition:background .2s}
 .car-dot.active{background:var(--rosegold)}
 
-/* ══ CEREMONIES ══ */
-.cer-sec{background:var(--ivory)}
-.cer-sec::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,transparent,var(--sage),var(--rosegold),var(--sage),transparent)}
-.cer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:20px;max-width:860px;margin:0 auto}
-.cer-card{background:var(--champagne);border:.5px solid rgba(196,154,108,.4);padding:26px 18px;text-align:center;
-  position:relative;transition:transform .25s,box-shadow .25s}
-.cer-card:hover{transform:translateY(-5px);box-shadow:0 8px 24px rgba(26,61,38,.09)}
-.cer-card::after{content:'';position:absolute;top:0;left:20%;right:20%;height:2.5px;
-  background:linear-gradient(90deg,transparent,var(--leaf),transparent)}
-.cer-icon{font-size:26px;display:block;margin-bottom:10px}
-.cer-name{font-family:'Cinzel',serif;font-size:11.5px;letter-spacing:.12em;color:var(--forest);text-transform:uppercase;margin-bottom:6px}
-.cer-te{font-family:'Noto Serif Telugu',serif;font-size:12px;color:var(--rose);display:block;margin-bottom:2px;opacity:.82}
-.cer-ta{font-family:'Noto Serif Tamil',serif;font-size:12px;color:var(--text-light);display:block;margin-bottom:10px;opacity:.75}
-.cer-desc{font-family:'Cormorant Garamond',serif;font-size:13.5px;color:var(--text-light);font-style:italic;line-height:1.7}
-
-/* ══ RSVP ══ */
-.rsvp-sec{background:linear-gradient(160deg,var(--pine),var(--forest),var(--pine));padding:76px 24px}
-.rsvp-sec .s-eyebrow{color:var(--rg-light)}
-.rsvp-sec .s-title{color:var(--rg-pale)}
-.rsvp-box{max-width:540px;margin:0 auto;background:rgba(255,253,247,.04);
-  border:.5px solid rgba(196,154,108,.28);padding:42px 38px;position:relative}
-.rsvp-box::before{content:'';position:absolute;inset:9px;border:.5px solid rgba(196,154,108,.13)}
-.rsvp-row{margin-bottom:18px}
-.rsvp-lbl{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.3em;color:rgba(196,154,108,.65);text-transform:uppercase;display:block;margin-bottom:6px}
-.rsvp-input,.rsvp-sel,.rsvp-area{width:100%;background:rgba(255,253,247,.05);border:.5px solid rgba(196,154,108,.28);
-  color:var(--rg-pale);font-family:'Playfair Display',serif;font-size:16px;padding:12px 14px;outline:none;transition:border-color .2s}
-.rsvp-input:focus,.rsvp-sel:focus,.rsvp-area:focus{border-color:var(--rosegold)}
-.rsvp-sel option{background:var(--forest);color:var(--rg-pale)}
-.rsvp-area{height:90px;resize:vertical}
-.rsvp-attend{display:flex;gap:16px}
-.rsvp-rlbl{display:flex;align-items:center;gap:8px;font-family:'Playfair Display',serif;font-size:16px;color:var(--rg-pale);cursor:pointer}
-.rsvp-rlbl input{accent-color:var(--rosegold)}
-.rsvp-sub{width:100%;padding:14px;background:transparent;border:1px solid var(--rosegold);
-  color:var(--rg-light);font-family:'Cinzel',serif;font-size:10px;letter-spacing:.35em;text-transform:uppercase;
-  cursor:pointer;transition:all .25s;margin-top:8px}
-.rsvp-sub:hover{background:var(--rosegold);color:var(--forest)}
-.rsvp-thanks{display:none;text-align:center;padding:44px 20px;
-  font-family:'Playfair Display',serif;font-style:italic;font-size:20px;color:var(--rg-pale)}
-
 /* ══ SHARE ══ */
 .share-sec{background:var(--champagne);padding:60px 24px;text-align:center}
 .share-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
@@ -359,8 +319,6 @@ footer::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;
   <ul class="nav-links">
     <li><a href="#families">Families</a></li>
     <li><a href="#events">Events</a></li>
-    <li><a href="#ceremonies">Ceremonies</a></li>
-    <li><a href="#rsvp">RSVP</a></li>
   </ul>
   <div class="lang-switcher">
     <button class="lang-btn active" onclick="setLang('en',event)">EN</button>
@@ -832,23 +790,6 @@ footer::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;
   </div>
 </section>
 
-<!-- CEREMONIES -->
-<section class="cer-sec fade-in" id="ceremonies">
-  <div class="s-inner">
-    <span class="s-eyebrow">Sacred Rituals · పవిత్ర కార్యక్రమాలు · புனித சடங்குகள்</span>
-    <h2 class="s-title">Sacred Moments</h2>
-    <span class="s-sub">తెలుగు–తమిళ సంప్రదాయాల పవిత్ర మేళవింపు</span>
-    <div class="cer-grid">
-      <div class="cer-card fade-in"><span class="cer-icon">🌿</span><div class="cer-name">Pellikuthuru</div><span class="cer-te">పెళ్ళికూతురు</span><span class="cer-ta">பெண் அலங்காரம்</span><p class="cer-desc">Adorning the bride with turmeric and blessings before the wedding</p></div>
-      <div class="cer-card fade-in"><span class="cer-icon">🌾</span><div class="cer-name">Jeelakarra Bellam</div><span class="cer-te">జీలకర్ర బెల్లం</span><span class="cer-ta">சீரகம் வெல்லம்</span><p class="cer-desc">Cumin and jaggery placed on the couple's heads to seal their union</p></div>
-      <div class="cer-card fade-in"><span class="cer-icon">🌸</span><div class="cer-name">Talambralu</div><span class="cer-te">తలంబ్రాలు</span><span class="cer-ta">தலம்பிராலு</span><p class="cer-desc">Showering each other with rice and turmeric — a joyful blessing</p></div>
-      <div class="cer-card fade-in"><span class="cer-icon">🪔</span><div class="cer-name">Oonjal</div><span class="cer-te">ఉయ్యాల</span><span class="cer-ta">ஊஞ்சல்</span><p class="cer-desc">The couple swings together as elders sing traditional Tamil wedding songs</p></div>
-      <div class="cer-card fade-in"><span class="cer-icon">🔥</span><div class="cer-name">Sapthapadi</div><span class="cer-te">సప్తపది</span><span class="cer-ta">சப்தபதி</span><p class="cer-desc">Seven sacred steps around the holy fire — the heart of the wedding</p></div>
-      <div class="cer-card fade-in"><span class="cer-icon">💛</span><div class="cer-name">Thaali Kattu</div><span class="cer-te">మంగళసూత్రం</span><span class="cer-ta">தாலி கட்டு</span><p class="cer-desc">The sacred thread tied around the bride's neck by the groom</p></div>
-    </div>
-  </div>
-</section>
-
 <!-- KOLAM -->
 <div class="kolam-band">
   <svg width="100%" height="36" viewBox="0 0 900 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
@@ -868,39 +809,6 @@ footer::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;
     <rect width="100%" height="36" fill="url(#kp)"/>
   </svg>
 </div>
-
-<!-- RSVP -->
-<section class="rsvp-sec fade-in" id="rsvp">
-  <span class="s-eyebrow" style="color:var(--rg-light)">We Would Love to See You</span>
-  <h2 class="s-title" style="color:var(--rg-pale);text-align:center;margin-bottom:8px">RSVP</h2>
-  <span class="s-sub" style="color:rgba(196,154,108,.45);display:block;text-align:center;margin-bottom:36px">మీ హాజరు నిర్ధారించండి · உங்கள் வருகையை உறுதிப்படுத்தவும்</span>
-  <div class="rsvp-box">
-    <form id="rsvpForm" onsubmit="submitRsvp(event)">
-      <div class="rsvp-row"><label class="rsvp-lbl">Your Name</label><input class="rsvp-input" type="text" placeholder="Full name" required></div>
-      <div class="rsvp-row"><label class="rsvp-lbl">Phone Number</label><input class="rsvp-input" type="tel" placeholder="+91 XXXXX XXXXX"></div>
-      <div class="rsvp-row">
-        <label class="rsvp-lbl">Attending?</label>
-        <div class="rsvp-attend">
-          <label class="rsvp-rlbl"><input type="radio" name="attend" value="yes" checked> Yes!</label>
-          <label class="rsvp-rlbl"><input type="radio" name="attend" value="no"> Unable to attend</label>
-        </div>
-      </div>
-      <div class="rsvp-row"><label class="rsvp-lbl">Which Event?</label>
-        <select class="rsvp-sel">
-          <option>All Events</option>
-          <option>Engagement (Oct 15)</option>
-          <option>Sangeeth (Nov 13)</option>
-          <option>Haldi (Nov 14)</option>
-          <option>Wedding (Nov 15)</option>
-        </select>
-      </div>
-      <div class="rsvp-row"><label class="rsvp-lbl">No. of Guests</label><input class="rsvp-input" type="number" placeholder="Including yourself" min="1" max="20"></div>
-      <div class="rsvp-row"><label class="rsvp-lbl">Message / Blessings</label><textarea class="rsvp-area" placeholder="Share your warm wishes..."></textarea></div>
-      <button type="submit" class="rsvp-sub">Send with Blessings ✦</button>
-    </form>
-    <div class="rsvp-thanks" id="rsvpThanks">🌸 Thank you for celebrating with us.<br>మీ ఆశీర్వాదాలకు ధన్యవాదాలు · நன்றி</div>
-  </div>
-</section>
 
 <!-- SHARE -->
 <section class="share-sec fade-in">
@@ -1050,9 +958,6 @@ resetCT();
 let tx=0;
 tr.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});
 tr.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>40)cMove(d<0?1:-1)},{passive:true});
-
-/* RSVP */
-function submitRsvp(e){e.preventDefault();document.getElementById('rsvpForm').style.display='none';document.getElementById('rsvpThanks').style.display='block'}
 
 /* SHARE */
 function copyLink(){navigator.clipboard.writeText(location.href).then(()=>alert('Link copied! 🌸'))}
